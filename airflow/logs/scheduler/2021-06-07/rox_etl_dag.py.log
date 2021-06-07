@@ -3634,3 +3634,59 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'airflow.operators.rox_plugin'
 [2021-06-07 02:04:45,529] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/rox_etl_dag.py
 [2021-06-07 02:04:45,541] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/rox_etl_dag.py took 0.017 seconds
+[2021-06-07 02:05:15,576] {scheduler_job.py:182} INFO - Started process (PID=5569) to work on /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:05:15,576] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/rox_etl_dag.py for tasks to queue
+[2021-06-07 02:05:15,577] {logging_mixin.py:104} INFO - [2021-06-07 02:05:15,576] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:05:15,579] {logging_mixin.py:104} INFO - [2021-06-07 02:05:15,579] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/rox_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rox_etl_dag.py", line 5, in <module>
+    from airflow.operators.rox_plugin import StageToRedshiftOperator, DataQualityperator
+ModuleNotFoundError: No module named 'airflow.operators.rox_plugin'
+[2021-06-07 02:05:15,580] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:05:15,591] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/rox_etl_dag.py took 0.017 seconds
+[2021-06-07 02:05:46,524] {scheduler_job.py:182} INFO - Started process (PID=5647) to work on /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:05:46,526] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/rox_etl_dag.py for tasks to queue
+[2021-06-07 02:05:46,528] {logging_mixin.py:104} INFO - [2021-06-07 02:05:46,527] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:05:46,539] {logging_mixin.py:104} INFO - [2021-06-07 02:05:46,537] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/rox_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rox_etl_dag.py", line 5, in <module>
+    from airflow.operators.rox_plugin import StageToRedshiftOperator, DataQualityperator
+ModuleNotFoundError: No module named 'airflow.operators.rox_plugin'
+[2021-06-07 02:05:46,540] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:05:46,564] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/rox_etl_dag.py took 0.049 seconds
+[2021-06-07 02:06:16,614] {scheduler_job.py:182} INFO - Started process (PID=5734) to work on /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:06:16,615] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/rox_etl_dag.py for tasks to queue
+[2021-06-07 02:06:16,616] {logging_mixin.py:104} INFO - [2021-06-07 02:06:16,616] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:06:16,619] {logging_mixin.py:104} INFO - [2021-06-07 02:06:16,618] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/rox_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rox_etl_dag.py", line 5, in <module>
+    from airflow.operators.rox_plugin import StageToRedshiftOperator, DataQualityperator
+ModuleNotFoundError: No module named 'airflow.operators.rox_plugin'
+[2021-06-07 02:06:16,619] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:06:16,634] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/rox_etl_dag.py took 0.022 seconds
+[2021-06-07 02:06:46,852] {scheduler_job.py:182} INFO - Started process (PID=5804) to work on /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:06:46,853] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/rox_etl_dag.py for tasks to queue
+[2021-06-07 02:06:46,853] {logging_mixin.py:104} INFO - [2021-06-07 02:06:46,853] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:06:46,856] {logging_mixin.py:104} INFO - [2021-06-07 02:06:46,855] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/rox_etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rox_etl_dag.py", line 5, in <module>
+    from airflow.operators.rox_plugin import StageToRedshiftOperator, DataQualityperator
+ModuleNotFoundError: No module named 'airflow.operators.rox_plugin'
+[2021-06-07 02:06:46,856] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/rox_etl_dag.py
+[2021-06-07 02:06:46,871] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/rox_etl_dag.py took 0.021 seconds

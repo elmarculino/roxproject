@@ -927,3 +927,51 @@ In current version, it is optional. The decorator is applied automatically using
 [2021-06-07 02:04:51,956] {logging_mixin.py:104} INFO - [2021-06-07 02:04:51,956] {dag.py:1832} INFO - Sync 1 DAGs
 [2021-06-07 02:04:51,966] {logging_mixin.py:104} INFO - [2021-06-07 02:04:51,966] {dag.py:2305} INFO - Setting next_dagrun for stage_rox_bike_tables to 2021-06-07T02:04:51.732898+00:00
 [2021-06-07 02:04:51,973] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/stage_data_s3_to_redshift.py took 0.345 seconds
+[2021-06-07 02:05:22,744] {scheduler_job.py:182} INFO - Started process (PID=5581) to work on /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:05:22,745] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/stage_data_s3_to_redshift.py for tasks to queue
+[2021-06-07 02:05:22,746] {logging_mixin.py:104} INFO - [2021-06-07 02:05:22,746] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:05:22,841] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:05:22,848] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['stage_rox_bike_tables']) retrieved from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:05:23,063] {logging_mixin.py:104} INFO - [2021-06-07 02:05:23,063] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:05:23,073] {logging_mixin.py:104} INFO - [2021-06-07 02:05:23,073] {dag.py:2305} INFO - Setting next_dagrun for stage_rox_bike_tables to 2021-06-07T02:05:22.843082+00:00
+[2021-06-07 02:05:23,082] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/stage_data_s3_to_redshift.py took 0.341 seconds
+[2021-06-07 02:05:53,700] {scheduler_job.py:182} INFO - Started process (PID=5668) to work on /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:05:53,701] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/stage_data_s3_to_redshift.py for tasks to queue
+[2021-06-07 02:05:53,701] {logging_mixin.py:104} INFO - [2021-06-07 02:05:53,701] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:05:53,794] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:05:53,801] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['stage_rox_bike_tables']) retrieved from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:05:54,017] {logging_mixin.py:104} INFO - [2021-06-07 02:05:54,017] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:05:54,027] {logging_mixin.py:104} INFO - [2021-06-07 02:05:54,027] {dag.py:2305} INFO - Setting next_dagrun for stage_rox_bike_tables to 2021-06-07T02:05:53.795909+00:00
+[2021-06-07 02:05:54,034] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/stage_data_s3_to_redshift.py took 0.336 seconds
+[2021-06-07 02:06:24,763] {scheduler_job.py:182} INFO - Started process (PID=5738) to work on /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:06:24,763] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/stage_data_s3_to_redshift.py for tasks to queue
+[2021-06-07 02:06:24,764] {logging_mixin.py:104} INFO - [2021-06-07 02:06:24,764] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:06:24,862] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:06:24,870] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['stage_rox_bike_tables']) retrieved from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:06:25,086] {logging_mixin.py:104} INFO - [2021-06-07 02:06:25,086] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:06:25,096] {logging_mixin.py:104} INFO - [2021-06-07 02:06:25,096] {dag.py:2305} INFO - Setting next_dagrun for stage_rox_bike_tables to 2021-06-07T02:06:24.864812+00:00
+[2021-06-07 02:06:25,104] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/stage_data_s3_to_redshift.py took 0.344 seconds
+[2021-06-07 02:06:55,975] {scheduler_job.py:182} INFO - Started process (PID=5825) to work on /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:06:55,976] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/stage_data_s3_to_redshift.py for tasks to queue
+[2021-06-07 02:06:55,976] {logging_mixin.py:104} INFO - [2021-06-07 02:06:55,976] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:06:56,073] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:06:56,081] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['stage_rox_bike_tables']) retrieved from /opt/airflow/dags/stage_data_s3_to_redshift.py
+[2021-06-07 02:06:56,294] {logging_mixin.py:104} INFO - [2021-06-07 02:06:56,294] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:06:56,305] {logging_mixin.py:104} INFO - [2021-06-07 02:06:56,305] {dag.py:2305} INFO - Setting next_dagrun for stage_rox_bike_tables to 2021-06-07T02:06:56.075359+00:00
+[2021-06-07 02:06:56,313] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/stage_data_s3_to_redshift.py took 0.341 seconds
