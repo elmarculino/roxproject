@@ -33,13 +33,13 @@ Jupyter Notebook
 
 Os notebooks foram numerados de acordo com uma ordem lógica de execução. No entando o desenvolvimento dos mesmo não foi linear. Apenas como exemplo, o primeiro notebook criado foi o __analise_dados_spark.ipynb__ já que o Apache Spark permite a importação dos arquivos CSV e a execução de queries SQL nos Dataframes gerados.
 
-├── 00_criacao_infra_aws.ipynb
-├── 01_prepacacao_dados_pandas.ipynb
-├── 02_envio_arquivos_s3.ipynb
-├── 03_criacao_tablelas_redshift.ipynb
-├── 04_analise_dados_spark.ipynb
-├── 05_criacao_tabelas_postgres.ipynb
-├── 06_analise_dados_postgres.ipynb
+    ├── 00_criacao_infra_aws.ipynb
+    ├── 01_prepacacao_dados_pandas.ipynb
+    ├── 02_envio_arquivos_s3.ipynb
+    ├── 03_criacao_tablelas_redshift.ipynb
+    ├── 04_analise_dados_spark.ipynb
+    ├── 05_criacao_tabelas_postgres.ipynb
+    ├── 06_analise_dados_postgres.ipynb
 
 #### 00_criacao_infra_aws.ipynb
     
