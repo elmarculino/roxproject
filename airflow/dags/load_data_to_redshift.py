@@ -7,7 +7,6 @@ from airflow.operators.python_operator import PythonOperator
 
 import sql_statements
 
-
 def load_data_to_redshift(sql_stmt, *args, **kwargs):
     redshift_hook = PostgresHook("redshift")
     redshift_hook.run(sql_stmt)
