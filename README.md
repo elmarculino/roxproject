@@ -102,6 +102,6 @@ Os objetivos o projeto exigiram o uso de uma gama variada de tecnologias de enge
 
 Outro ponto de melhora seria a entrega um dashboard interativo como o demonstrado acima ou utilizando ferramentas open source como o Graphana.
 
-Como citado anteriormentei, a atualização dos notebooks para a geração automática dos scripts python é o próximo passo natural para o projeto.  
+Como citado anteriormente, a atualização dos notebooks para a geração automática dos scripts python é o próximo passo natural para o projeto.  
 
 O projeto foi um ótimo exercicio. Espero que gostem!
