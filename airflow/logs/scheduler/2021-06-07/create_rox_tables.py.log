@@ -2854,3 +2854,75 @@ In current version, it is optional. The decorator is applied automatically using
 [2021-06-07 02:01:35,389] {logging_mixin.py:104} INFO - [2021-06-07 02:01:35,389] {dag.py:1832} INFO - Sync 1 DAGs
 [2021-06-07 02:01:35,399] {logging_mixin.py:104} INFO - [2021-06-07 02:01:35,399] {dag.py:2305} INFO - Setting next_dagrun for create_rox_tables to 2021-06-07T02:01:35.167310+00:00
 [2021-06-07 02:01:35,406] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/create_rox_tables.py took 0.366 seconds
+[2021-06-07 02:02:06,099] {scheduler_job.py:182} INFO - Started process (PID=5037) to work on /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:02:06,099] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/create_rox_tables.py for tasks to queue
+[2021-06-07 02:02:06,100] {logging_mixin.py:104} INFO - [2021-06-07 02:02:06,100] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:02:06,200] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:02:06,210] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['create_rox_tables']) retrieved from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:02:06,427] {logging_mixin.py:104} INFO - [2021-06-07 02:02:06,427] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:02:06,437] {logging_mixin.py:104} INFO - [2021-06-07 02:02:06,437] {dag.py:2305} INFO - Setting next_dagrun for create_rox_tables to 2021-06-07T02:02:06.203222+00:00
+[2021-06-07 02:02:06,444] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/create_rox_tables.py took 0.349 seconds
+[2021-06-07 02:02:36,979] {scheduler_job.py:182} INFO - Started process (PID=5126) to work on /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:02:36,980] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/create_rox_tables.py for tasks to queue
+[2021-06-07 02:02:36,980] {logging_mixin.py:104} INFO - [2021-06-07 02:02:36,980] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:02:37,082] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:02:37,090] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['create_rox_tables']) retrieved from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:02:37,316] {logging_mixin.py:104} INFO - [2021-06-07 02:02:37,316] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:02:37,325] {logging_mixin.py:104} INFO - [2021-06-07 02:02:37,325] {dag.py:2305} INFO - Setting next_dagrun for create_rox_tables to 2021-06-07T02:02:37.084816+00:00
+[2021-06-07 02:02:37,333] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/create_rox_tables.py took 0.357 seconds
+[2021-06-07 02:03:07,793] {scheduler_job.py:182} INFO - Started process (PID=5197) to work on /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:03:07,794] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/create_rox_tables.py for tasks to queue
+[2021-06-07 02:03:07,794] {logging_mixin.py:104} INFO - [2021-06-07 02:03:07,794] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:03:07,891] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:03:07,898] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['create_rox_tables']) retrieved from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:03:08,115] {logging_mixin.py:104} INFO - [2021-06-07 02:03:08,115] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:03:08,125] {logging_mixin.py:104} INFO - [2021-06-07 02:03:08,125] {dag.py:2305} INFO - Setting next_dagrun for create_rox_tables to 2021-06-07T02:03:07.893539+00:00
+[2021-06-07 02:03:08,133] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/create_rox_tables.py took 0.343 seconds
+[2021-06-07 02:03:38,212] {scheduler_job.py:182} INFO - Started process (PID=5284) to work on /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:03:38,213] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/create_rox_tables.py for tasks to queue
+[2021-06-07 02:03:38,214] {logging_mixin.py:104} INFO - [2021-06-07 02:03:38,213] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:03:38,308] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:03:38,315] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['create_rox_tables']) retrieved from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:03:38,530] {logging_mixin.py:104} INFO - [2021-06-07 02:03:38,530] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:03:38,540] {logging_mixin.py:104} INFO - [2021-06-07 02:03:38,540] {dag.py:2305} INFO - Setting next_dagrun for create_rox_tables to 2021-06-07T02:03:38.310500+00:00
+[2021-06-07 02:03:38,549] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/create_rox_tables.py took 0.338 seconds
+[2021-06-07 02:04:09,053] {scheduler_job.py:182} INFO - Started process (PID=5372) to work on /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:04:09,054] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/create_rox_tables.py for tasks to queue
+[2021-06-07 02:04:09,054] {logging_mixin.py:104} INFO - [2021-06-07 02:04:09,054] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:04:09,153] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:04:09,160] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['create_rox_tables']) retrieved from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:04:09,385] {logging_mixin.py:104} INFO - [2021-06-07 02:04:09,385] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:04:09,395] {logging_mixin.py:104} INFO - [2021-06-07 02:04:09,395] {dag.py:2305} INFO - Setting next_dagrun for create_rox_tables to 2021-06-07T02:04:09.155577+00:00
+[2021-06-07 02:04:09,403] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/create_rox_tables.py took 0.353 seconds
+[2021-06-07 02:04:39,617] {scheduler_job.py:182} INFO - Started process (PID=5442) to work on /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:04:39,618] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/create_rox_tables.py for tasks to queue
+[2021-06-07 02:04:39,618] {logging_mixin.py:104} INFO - [2021-06-07 02:04:39,618] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:04:39,718] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2021-06-07 02:04:39,725] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['create_rox_tables']) retrieved from /opt/airflow/dags/create_rox_tables.py
+[2021-06-07 02:04:39,941] {logging_mixin.py:104} INFO - [2021-06-07 02:04:39,941] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-07 02:04:39,951] {logging_mixin.py:104} INFO - [2021-06-07 02:04:39,951] {dag.py:2305} INFO - Setting next_dagrun for create_rox_tables to 2021-06-07T02:04:39.720169+00:00
+[2021-06-07 02:04:39,958] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/create_rox_tables.py took 0.344 seconds
