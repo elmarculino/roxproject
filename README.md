@@ -87,4 +87,4 @@ Os objetivos o projeto exigiram o uso de uma gama variada de tecnologias de enge
 
 Outro ponto de melhora seria a entrega um dashboard interativo como o demonstrado acima ou utilizando ferramentas open source como o Graphana.  
 
-O projeto um ótimo exercicio. Espero que gostem!
+O projeto foi um ótimo exercicio. Espero que gostem!
