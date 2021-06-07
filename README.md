@@ -16,7 +16,7 @@ Projeto de engenharia e análise de dados de empresa de produção de bicicletas
 
 O desenvolvimento da solução foi feito, em sua maioria, utilizando Programação Interativa em Jupyter Notebooks em um ambiente Anaconda com Python 3.9.4. Parte do código utilizado, como funções específicas, foi retirado das documentações da AWS ou dos pacotes utilizados. 
 
-Todo o código pode ser análisado e executado diretamente nos notebooks e os scripts de criação da infraestrutura cloud na AWS e migração de dados podem ser exportados para serem executados diretamente no terminal.
+Todo o código pode ser analisado e executado diretamente nos notebooks e os scripts de criação da infraestrutura cloud na AWS e migração de dados podem ser exportados para serem executados diretamente no terminal.
 
 A criação do ambiente cloud na AWS e a conexão com bancos de dados locais dependem das variáveis salvas no arquivo __dwh.cfg__. No repositório foi disponibilizado um __dwh.cfg.modelo__ para que seja editado com a KEY e SECRET do usuário da AWS. As demais variáveis do arquivo foram mantidas como exemplo.
 
@@ -33,7 +33,7 @@ Jupyter Notebook
 
 #### Jupyter Notebooks
 
-Para executar o código disponibilizado nos notebooks é necessário que se tenha o pacote Jupyter instalado no ambiente Python. A maneira mais conveniente de ter vários ambientes virtuais python é com o pacote Anaconda ou com pyenv. Já com o ambiente ativado é só executar o comando __jupyter notebook__ ou __jupyter lab__ e entrar com endereço apresentato no terminal pelo browser. Os notebooks devem ser executados célula a célula sequencialmente e de acordo com as instruções disponibilizadas nos mesmos. 
+Para executar o código disponibilizado nos notebooks é necessário que se tenha o pacote Jupyter instalado no ambiente Python. A maneira mais conveniente de ter vários ambientes virtuais python é com o pacote Anaconda ou com pyenv. Já com o ambiente ativado é só executar o comando __jupyter notebook__ ou __jupyter lab__ e entrar com endereço apresentado no terminal pelo browser. Os notebooks devem ser executados célula a célula sequencialmente e de acordo com as instruções disponibilizadas nos mesmos. 
 
 #### Apache Airflow
 
@@ -58,7 +58,7 @@ Os notebooks foram numerados de acordo com uma ordem lógica de execução. No e
 
 #### 00_criacao_infra_aws.ipynb
     
-Código para a criação do banco de bados no Redshift, o Bucket no S3 e Permissões necessárias para a troca de dados e o acesso externo aos serviços da Amazon.
+Código para a criação do banco de dados no Redshift, o Bucket no S3 e Permissões necessárias para a troca de dados e o acesso externo aos serviços da Amazon.
 
 #### 01_prepacacao_dados_pandas.ipynb
 
@@ -74,19 +74,19 @@ Notebook para a execução dos códigos SQL para criação das tabelas no Redshi
 
 #### 04_analise_dados_spark.ipynb
 
-Importação dos dados em CSV para Dataframes Spark para a realização das consultas solicitadas. Neste notebook estão disponiveis as queries e os resultados como respostas para os questionamentos apresentados no arquivo de apresentação do projeto. 
+Importação dos dados em CSV para Dataframes Spark para a realização das consultas solicitadas. Neste notebook estão disponíveis as queries e os resultados como respostas para os questionamentos apresentados no arquivo de apresentação do projeto. 
 
 #### 05_criacao_tabelas_postgres.ipynb
 
-Notebook utilizado para o desenvolvimento dos Schemas das tabelas do banco de dados. Como o Redshift é baseado no PostgresSQL a utilização de um ambiente local compativel é mais rápido e econômico.
+Notebook utilizado para o desenvolvimento dos Schemas das tabelas do banco de dados. Como o Redshift é baseado no PostgresSQL a utilização de um ambiente local compatível é mais rápido e econômico.
 
 #### 06_analise_dados_postgres.ipynb
 
-Foram executadas as mesmas consultas do notebook Spark mas agora nas tabelas criadas com base nos arquivos CSV. O objetivo dessa segunda execução foi realizar o nos dados após tratamento para identificar eventuais deferenças. Também apresenta as responstas para as questões do arquivo de apresentação do projeto.
+Foram executadas as mesmas consultas do notebook Spark mas agora nas tabelas criadas com base nos arquivos CSV. O objetivo dessa segunda execução foi realizar o nos dados após tratamento para identificar eventuais diferenças. Também apresenta as respostas para as questões do arquivo de apresentação do projeto.
 
 ## Objetivos
 
-Além do desenvolvimento em notebooks, foi também incluido no repositório a pasta __airflow/__ com o _docker-compose.yaml_ para a criação da infraestrutura necessária para a automação dos processoas. Foi criado DAG para criação da tabelas no Redshift e o carregamento dos dados dos arquivos CSV de forma automática. Foram criados também Operators com o objetivo de deixar o código do DAG mais limpo mas esse acabou não sendo usado na execução teste.
+Além do desenvolvimento em notebooks, foi também incluido no repositório a pasta __airflow/__ com o _docker-compose.yaml_ para a criação da infraestrutura necessária para a automação dos processos. Foi criado DAG para criação da tabelas no Redshift e o carregamento dos dados dos arquivos CSV de forma automática. Foram criados também Operators com o objetivo de deixar o código do DAG mais limpo mas esse acabou não sendo usado na execução teste.
 
 
 ![airflow dag execution](https://github.com/elmarculino/roxproject/blob/master/images/airflow_stage_execution.png?raw=true)
@@ -104,4 +104,4 @@ Outro ponto de melhora seria a entrega um dashboard interativo como o demonstrad
 
 Como citado anteriormente, a atualização dos notebooks para a geração automática dos scripts python é o próximo passo natural para o projeto.  
 
-O projeto foi um ótimo exercicio. Espero que gostem!
+O projeto foi um ótimo exercício. Espero que gostem!
