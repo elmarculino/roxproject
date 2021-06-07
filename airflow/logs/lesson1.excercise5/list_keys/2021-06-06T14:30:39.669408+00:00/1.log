@@ -1,0 +1,31 @@
+[2021-06-06 14:30:40,446] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: lesson1.excercise5.list_keys 2021-06-06T14:30:39.669408+00:00 [queued]>
+[2021-06-06 14:30:40,458] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: lesson1.excercise5.list_keys 2021-06-06T14:30:39.669408+00:00 [queued]>
+[2021-06-06 14:30:40,458] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-06 14:30:40,458] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-06 14:30:40,460] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-06 14:30:40,466] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): list_keys> on 2021-06-06T14:30:39.669408+00:00
+[2021-06-06 14:30:40,471] {standard_task_runner.py:52} INFO - Started process 1206 to run task
+[2021-06-06 14:30:40,473] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'lesson1.excercise5', 'list_keys', '2021-06-06T14:30:39.669408+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/connection_hooks.py', '--cfg-path', '/tmp/tmpwq23_w7v', '--error-file', '/tmp/tmpz6zc835s']
+[2021-06-06 14:30:40,473] {standard_task_runner.py:77} INFO - Job 6: Subtask list_keys
+[2021-06-06 14:30:40,501] {logging_mixin.py:104} INFO - Running <TaskInstance: lesson1.excercise5.list_keys 2021-06-06T14:30:39.669408+00:00 [running]> on host 21bd802337aa
+[2021-06-06 14:30:40,537] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=lesson1.excercise5
+AIRFLOW_CTX_TASK_ID=list_keys
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-06T14:30:39.669408+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-06T14:30:39.669408+00:00
+[2021-06-06 14:30:40,548] {connection_hooks.py:14} INFO - Listing Keys from roxproject/Sales
+[2021-06-06 14:30:40,548] {base_aws.py:368} INFO - Airflow Connection: aws_conn_id=aws_credentials
+[2021-06-06 14:30:40,554] {base_aws.py:170} INFO - Credentials retrieved from extra_config
+[2021-06-06 14:30:40,554] {base_aws.py:87} INFO - Creating session with aws_access_key_id=AKIAQNT7WWEVKZQVCKMP region_name=None
+[2021-06-06 14:30:40,566] {base_aws.py:157} INFO - role_arn is None
+[2021-06-06 14:30:41,638] {connection_hooks.py:17} INFO - - s3://roxproject/Sales.Customer.csv
+[2021-06-06 14:30:41,638] {connection_hooks.py:17} INFO - - s3://roxproject/Sales.SalesOrderDetail.csv
+[2021-06-06 14:30:41,638] {connection_hooks.py:17} INFO - - s3://roxproject/Sales.SalesOrderHeader.csv
+[2021-06-06 14:30:41,638] {connection_hooks.py:17} INFO - - s3://roxproject/Sales.SpecialOfferProduct.csv
+[2021-06-06 14:30:41,639] {python.py:151} INFO - Done. Returned value was: None
+[2021-06-06 14:30:41,648] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=lesson1.excercise5, task_id=list_keys, execution_date=20210606T143039, start_date=20210606T143040, end_date=20210606T143041
+[2021-06-06 14:30:41,667] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-06-06 14:30:41,690] {local_task_job.py:151} INFO - Task exited with return code 0

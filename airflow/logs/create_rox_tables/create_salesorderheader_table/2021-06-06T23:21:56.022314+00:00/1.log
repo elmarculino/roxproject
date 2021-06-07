@@ -1,0 +1,101 @@
+[2021-06-06 23:22:02,373] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: create_rox_tables.create_salesorderheader_table 2021-06-06T23:21:56.022314+00:00 [queued]>
+[2021-06-06 23:22:02,386] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: create_rox_tables.create_salesorderheader_table 2021-06-06T23:21:56.022314+00:00 [queued]>
+[2021-06-06 23:22:02,387] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-06 23:22:02,387] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-06 23:22:02,389] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-06 23:22:02,402] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): create_salesorderheader_table> on 2021-06-06T23:21:56.022314+00:00
+[2021-06-06 23:22:02,409] {standard_task_runner.py:52} INFO - Started process 127 to run task
+[2021-06-06 23:22:02,412] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'create_rox_tables', 'create_salesorderheader_table', '2021-06-06T23:21:56.022314+00:00', '--job-id', '29', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/create_rox_tables.py', '--cfg-path', '/tmp/tmp9jj_mkgs', '--error-file', '/tmp/tmp8o5ci6i5']
+[2021-06-06 23:22:02,412] {standard_task_runner.py:77} INFO - Job 29: Subtask create_salesorderheader_table
+[2021-06-06 23:22:02,454] {logging_mixin.py:104} INFO - Running <TaskInstance: create_rox_tables.create_salesorderheader_table 2021-06-06T23:21:56.022314+00:00 [running]> on host 21bd802337aa
+[2021-06-06 23:22:02,499] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=create_rox_tables
+AIRFLOW_CTX_TASK_ID=create_salesorderheader_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-06T23:21:56.022314+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-06T23:21:56.022314+00:00
+[2021-06-06 23:22:02,499] {postgres.py:70} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS SalesOrderHeader
+    (
+        SalesOrderID INTEGER NOT NULL,
+        RevisionNumber INTEGER,
+        OrderDate TIMESTAMP,
+        DueDate TIMESTAMP,
+        ShipDate TIMESTAMP,
+        Status INTEGER,
+        OnlineOrderFlag INTEGER,
+        SalesOrderNumber VARCHAR(10),
+        PurchaseOrderNumber VARCHAR(20),
+        AccountNumber VARCHAR(20),
+        CustomerID INTEGER,
+        SalesPersonID INTEGER,
+        TerritoryID INTEGER,
+        BillToAddressID INTEGER,
+        ShipToAddressID INTEGER,
+        ShipMethodID INTEGER,
+        CreditCardID INTEGER,
+        CreditCardApprovalCode VARCHAR(20),
+        CurrencyRateID INTEGER,
+        SubTotal FLOAT,
+        TaxAmt FLOAT,
+        Freight FLOAT,
+        TotalDue FLOAT,
+        Comment VARCHAR(10),
+        rowguid VARCHAR(36),
+        ModifiedDate TIMESTAMP,
+        PRIMARY KEY (SalesOrderID),
+        FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
+    )
+[2021-06-06 23:22:02,506] {base.py:78} INFO - Using connection to: id: redshift. Host: doxcluster.craeubgpe2r5.us-east-1.redshift.amazonaws.com, Port: 5439, Schema: dox, Login: doxuser, Password: ***, extra: {}
+[2021-06-06 23:22:04,823] {dbapi.py:204} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS SalesOrderHeader
+    (
+        SalesOrderID INTEGER NOT NULL,
+        RevisionNumber INTEGER,
+        OrderDate TIMESTAMP,
+        DueDate TIMESTAMP,
+        ShipDate TIMESTAMP,
+        Status INTEGER,
+        OnlineOrderFlag INTEGER,
+        SalesOrderNumber VARCHAR(10),
+        PurchaseOrderNumber VARCHAR(20),
+        AccountNumber VARCHAR(20),
+        CustomerID INTEGER,
+        SalesPersonID INTEGER,
+        TerritoryID INTEGER,
+        BillToAddressID INTEGER,
+        ShipToAddressID INTEGER,
+        ShipMethodID INTEGER,
+        CreditCardID INTEGER,
+        CreditCardApprovalCode VARCHAR(20),
+        CurrencyRateID INTEGER,
+        SubTotal FLOAT,
+        TaxAmt FLOAT,
+        Freight FLOAT,
+        TotalDue FLOAT,
+        Comment VARCHAR(10),
+        rowguid VARCHAR(36),
+        ModifiedDate TIMESTAMP,
+        PRIMARY KEY (SalesOrderID),
+        FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
+    ), parameters: None
+[2021-06-06 23:22:05,440] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py", line 72, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/dbapi.py", line 184, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/dbapi.py", line 208, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UndefinedTable: relation "customer" does not exist
+
+[2021-06-06 23:22:05,442] {taskinstance.py:1531} INFO - Marking task as FAILED. dag_id=create_rox_tables, task_id=create_salesorderheader_table, execution_date=20210606T232156, start_date=20210606T232202, end_date=20210606T232205
+[2021-06-06 23:22:05,472] {local_task_job.py:151} INFO - Task exited with return code 1

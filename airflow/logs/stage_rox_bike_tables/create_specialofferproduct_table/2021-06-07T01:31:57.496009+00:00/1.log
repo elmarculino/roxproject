@@ -1,0 +1,86 @@
+[2021-06-07 01:32:22,853] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: stage_rox_bike_tables.create_specialofferproduct_table 2021-06-07T01:31:57.496009+00:00 [queued]>
+[2021-06-07 01:32:22,862] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: stage_rox_bike_tables.create_specialofferproduct_table 2021-06-07T01:31:57.496009+00:00 [queued]>
+[2021-06-07 01:32:22,862] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-07 01:32:22,862] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-07 01:32:22,864] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-07 01:32:22,873] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): create_specialofferproduct_table> on 2021-06-07T01:31:57.496009+00:00
+[2021-06-07 01:32:22,879] {standard_task_runner.py:52} INFO - Started process 187 to run task
+[2021-06-07 01:32:22,882] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stage_rox_bike_tables', 'create_specialofferproduct_table', '2021-06-07T01:31:57.496009+00:00', '--job-id', '70', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/stage_data_s3_to_redshift.py', '--cfg-path', '/tmp/tmpyghw8pfj', '--error-file', '/tmp/tmp2nh05zn5']
+[2021-06-07 01:32:22,882] {standard_task_runner.py:77} INFO - Job 70: Subtask create_specialofferproduct_table
+[2021-06-07 01:32:22,909] {logging_mixin.py:104} INFO - Running <TaskInstance: stage_rox_bike_tables.create_specialofferproduct_table 2021-06-07T01:31:57.496009+00:00 [running]> on host 21bd802337aa
+[2021-06-07 01:32:22,941] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stage_rox_bike_tables
+AIRFLOW_CTX_TASK_ID=create_specialofferproduct_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-07T01:31:57.496009+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-07T01:31:57.496009+00:00
+[2021-06-07 01:32:22,941] {postgres.py:70} INFO - Executing: 
+    CREATE TABLE IF NOT EXISTS SpecialOfferProduct
+    (
+        SpecialOfferID INTEGER NOT NULL,
+        ProductID INTEGER NOT NULL,
+        rowguid VARCHAR(36),
+        ModifiedDate TIMESTAMP,
+        PRIMARY KEY (SpecialOfferID, ProductID),
+        FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
+    )
+[2021-06-07 01:32:22,947] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:32:22,948] {base.py:78} INFO - Using connection to: id: redshift. Host: doxcluster.craeubgpe2r5.us-east-1.redshift.amazonaws.com, Port: 5439, Schema: dox, Login: doxuser, Password: ***, extra: {}
+[2021-06-07 01:32:22,948] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:32:22,948] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:32:22,948] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:32:24,408] {dbapi.py:204} INFO - Running statement: 
+    CREATE TABLE IF NOT EXISTS SpecialOfferProduct
+    (
+        SpecialOfferID INTEGER NOT NULL,
+        ProductID INTEGER NOT NULL,
+        rowguid VARCHAR(36),
+        ModifiedDate TIMESTAMP,
+        PRIMARY KEY (SpecialOfferID, ProductID),
+        FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
+    ), parameters: None
+[2021-06-07 01:32:25,250] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=stage_rox_bike_tables, task_id=create_specialofferproduct_table, execution_date=20210607T013157, start_date=20210607T013222, end_date=20210607T013225
+[2021-06-07 01:32:25,316] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-07 01:32:25,339] {local_task_job.py:151} INFO - Task exited with return code 0

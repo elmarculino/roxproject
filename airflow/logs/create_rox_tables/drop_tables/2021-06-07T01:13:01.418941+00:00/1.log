@@ -1,0 +1,80 @@
+[2021-06-07 01:13:03,222] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: create_rox_tables.drop_tables 2021-06-07T01:13:01.418941+00:00 [queued]>
+[2021-06-07 01:13:03,234] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: create_rox_tables.drop_tables 2021-06-07T01:13:01.418941+00:00 [queued]>
+[2021-06-07 01:13:03,234] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-07 01:13:03,234] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-07 01:13:03,236] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-07 01:13:03,243] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): drop_tables> on 2021-06-07T01:13:01.418941+00:00
+[2021-06-07 01:13:03,249] {standard_task_runner.py:52} INFO - Started process 188 to run task
+[2021-06-07 01:13:03,251] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'create_rox_tables', 'drop_tables', '2021-06-07T01:13:01.418941+00:00', '--job-id', '53', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/create_rox_tables.py', '--cfg-path', '/tmp/tmprvcasa21', '--error-file', '/tmp/tmpc2ceaukf']
+[2021-06-07 01:13:03,251] {standard_task_runner.py:77} INFO - Job 53: Subtask drop_tables
+[2021-06-07 01:13:03,282] {logging_mixin.py:104} INFO - Running <TaskInstance: create_rox_tables.drop_tables 2021-06-07T01:13:01.418941+00:00 [running]> on host 21bd802337aa
+[2021-06-07 01:13:03,316] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=create_rox_tables
+AIRFLOW_CTX_TASK_ID=drop_tables
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-07T01:13:01.418941+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-07T01:13:01.418941+00:00
+[2021-06-07 01:13:03,316] {postgres.py:70} INFO - Executing: 
+    DROP TABLE IF EXISTS SalesOrderDetail,
+        SpecialOfferProduct,
+        SalesOrderHeader,
+        Customer,
+        Product,
+        Person;
+[2021-06-07 01:13:03,322] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:13:03,323] {base.py:78} INFO - Using connection to: id: redshift. Host: doxcluster.craeubgpe2r5.us-east-1.redshift.amazonaws.com, Port: 5439, Schema: dox, Login: doxuser, Password: ***, extra: {}
+[2021-06-07 01:13:03,323] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:13:03,324] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:13:03,324] {connection.py:360} ERROR - Failed parsing the json for conn_id redshift
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 357, in extra_dejson
+    obj = json.loads(self.extra)
+  File "/usr/local/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2021-06-07 01:13:05,012] {dbapi.py:204} INFO - Running statement: 
+    DROP TABLE IF EXISTS SalesOrderDetail,
+        SpecialOfferProduct,
+        SalesOrderHeader,
+        Customer,
+        Product,
+        Person;, parameters: None
+[2021-06-07 01:13:05,841] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=create_rox_tables, task_id=drop_tables, execution_date=20210607T011301, start_date=20210607T011303, end_date=20210607T011305
+[2021-06-07 01:13:05,869] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-07 01:13:05,912] {local_task_job.py:151} INFO - Task exited with return code 0
